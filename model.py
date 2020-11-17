@@ -141,7 +141,7 @@ if __name__ == '__main__':
     print(H.history)
     H.history.tocsv('history.csv')
 
-    # 以下会报错正在调试
+    # Debugging
     plt.plot(np.arange(0, N), H.history["loss"], label="train_loss")
     plt.plot(np.arange(0, N), H.history["val_loss"], label="val_loss")
     plt.plot(np.arange(0, N), H.history["categorical_acc"], label="train_acc")
